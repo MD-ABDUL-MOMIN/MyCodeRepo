@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:layout_marginTop="45dp"
+          android:padding="3dp"
+        >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/up_margin"
+            android:text="Enter your MASS :"
+            android:padding="3dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text1"
+            android:id="@+id/mass_value"
+            android:layout_toRightOf="@+id/text1"
+            />
+
+        <Spinner
+            android:id="@+id/unit_mass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/mass_value"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/mass_value"
+            android:entries="@array/mass_unit"
+       />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Height: "
+            android:id="@+id/text2"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/text1"
+            android:textStyle="bold"
+           android:padding="3dp"
+            />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/height_value"
+            android:layout_toRightOf="@id/text2"
+            android:layout_alignBaseline="@+id/text2"
+            />
+        <Spinner
+
+            android:id="@+id/unit_height"
+            android:layout_below="@+id/mass_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/height_unit"
+            android:layout_alignBaseline="@+id/height_value"
+            android:layout_toRightOf="@id/height_value"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Gender: "
+        android:id="@+id/text3"
+        android:layout_below="@id/text2"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="@dimen/up_margin"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text3"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/text3"
+        >
+
+        <RadioButton
+            android:id="@+id/male_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/up_margin"
+            android:text="Male"
+            />
+
+        <RadioButton
+            android:id="@+id/female_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/up_margin"
+            android:text="Female"
+            />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:text="For Result click on Calculate BMI"
+        android:textAlignment="center"
+        android:background="#DDD"
+        android:textColor="#000"
+        android:padding="3dp"
+        />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="204dp"
+        android:text="Calulate BMI" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+
+        android:layout_alignBaseline="@+id/btn_sub"
+        android:text="Reset"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn_sub"
+        />
+
+</RelativeLayout>

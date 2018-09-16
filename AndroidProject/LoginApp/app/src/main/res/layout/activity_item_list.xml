@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemList">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="13dp"
+        android:text="Pizza"
+        android:layout_marginLeft="13dp"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/sndwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pizza"
+        android:layout_below="@+id/pizza"
+        android:text="Sandwitch"
+        android:layout_alignLeft="@+id/pizza" />
+
+    <CheckBox
+        android:id="@+id/brger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pizza"
+        android:layout_below="@+id/sndwitch"
+        android:text="Burger"
+        android:layout_alignLeft="@+id/pizza" />
+
+    <CheckBox
+        android:id="@+id/mtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pizza"
+        android:layout_below="@+id/brger"
+        android:text="Mutton"
+        android:layout_alignLeft="@+id/pizza" />
+
+    <Button
+        android:id="@+id/ordr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/pizza"
+        android:layout_marginTop="160dp"
+        android:text="Order"
+        android:layout_alignLeft="@+id/pizza" />
+
+
+</RelativeLayout>
