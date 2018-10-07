@@ -2,6 +2,8 @@
     <string name="app_name">BMICalculation</string>
     <string name="action_settings">Settings</string>
     <string name="unit_select">Select unit</string>
+    <string name="mass">mass value</string>
+    <string name="height">height value</string>
     <string-array name="mass_unit">
         <item>Select unit</item>
 

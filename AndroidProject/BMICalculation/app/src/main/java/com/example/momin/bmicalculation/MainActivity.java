@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static android.view.View.*;
 
@@ -32,7 +33,7 @@ public class MainActivity extends Activity {
         btn =  findViewById(R.id.btn_sub);
         spinnerHeight = findViewById(R.id.unit_height);
         spinnerMass = findViewById(R.id.unit_mass);
-        tv = findViewById(R.id.result);
+
         heightvalue = findViewById(R.id.height_value);
 
         massvalue = findViewById(R.id.mass_value);
@@ -46,7 +47,10 @@ public class MainActivity extends Activity {
 
                 if(spinnerMass.getSelectedItemPosition()==0||spinnerHeight.getSelectedItemPosition()==0){
 
-                    tv.setText("Try again......\n select unit carefully");
+                    //Toast.setText("Try again......\n select unit carefully");
+                    Toast.makeText(getApplicationContext(),"Try again......\\n select unit carefully",Toast.LENGTH_LONG).show();
+
+
 
 
 
@@ -62,7 +66,7 @@ public class MainActivity extends Activity {
                         double tem = 0, tem1 = 1;
                         if (textM== null || textH == null) {
 
-                            tv.setText("Try again......\n unit or value error");
+                            Toast.makeText(getApplicationContext(),"Try again......\n unit or value error",Toast.LENGTH_LONG).show();
                         } else {
 
                             if (spinnerMass.getSelectedItemPosition() == 1)
@@ -92,15 +96,16 @@ public class MainActivity extends Activity {
                                 else if( BMI<35 && BMI>=30) predict="Moderately obese";
                                 else if( BMI<40 && BMI>=35) predict="Severely obese";
                                 else if( BMI>=40) predict="Very severely obese";
+                                String tex= "Observation "+predict;
 
 
-                                tv.setText("Observation:  "+predict);
+                                Toast.makeText(getApplicationContext(),tex,Toast.LENGTH_LONG).show();
 
                             }
                             else {
 
 
-                                tv.setText("Sorry try again\n please check value or unit ");
+                                Toast.makeText(getApplicationContext(),"Sorry try again\n please check value or unit ",Toast.LENGTH_LONG).show();
 
                             }
 
@@ -111,6 +116,7 @@ public class MainActivity extends Activity {
                         System.out.println(e);
 
                     }
+
 
                 }
 
@@ -126,7 +132,7 @@ public class MainActivity extends Activity {
                 massvalue.setText(null);
                 spinnerMass.setSelection(0);
                 spinnerHeight.setSelection(0);
-                tv.setText("Click on calculate BMI button");
+                Toast.makeText(getApplicationContext(),"Insert value again",Toast.LENGTH_SHORT).show();
 
 
             }

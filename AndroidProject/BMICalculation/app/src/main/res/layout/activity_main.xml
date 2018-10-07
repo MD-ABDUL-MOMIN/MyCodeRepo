@@ -8,132 +8,116 @@
         tools:context=".MainActivity"
         android:layout_marginTop="45dp"
           android:padding="3dp"
+         android:background="#FFF"
+
         >
 
         <TextView
             android:id="@+id/text1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="202dp"
+            android:layout_height="33dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="@dimen/up_margin"
-            android:text="Enter your MASS :"
+            android:layout_marginTop="50dp"
+            android:layout_marginVertical="20dp"
             android:padding="3dp"
+            android:text="Enter your MASS :"
+            android:textAlignment="center"
+            android:textSize="15sp"
             android:textStyle="bold"
-            />
+            android:background="#000" />
 
-        <EditText
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/text1"
-            android:id="@+id/mass_value"
-            android:layout_toRightOf="@+id/text1"
-            />
+    <EditText
+        android:id="@+id/mass_value"
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:layout_above="@+id/text2"
 
-        <Spinner
-            android:id="@+id/unit_mass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-          android:layout_toRightOf="@+id/mass_value"
-            android:layout_marginLeft="10dp"
-            android:layout_alignBaseline="@+id/mass_value"
-            android:entries="@array/mass_unit"
-       />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enter your Height: "
-            android:id="@+id/text2"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/text1"
-            android:textStyle="bold"
-           android:padding="3dp"
-            />
-        <EditText
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/height_value"
-            android:layout_toRightOf="@id/text2"
-            android:layout_alignBaseline="@+id/text2"
-            />
-        <Spinner
-
-            android:id="@+id/unit_height"
-            android:layout_below="@+id/mass_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/height_unit"
-            android:layout_alignBaseline="@+id/height_value"
-            android:layout_toRightOf="@id/height_value"
-            android:layout_marginLeft="10dp"
-            android:padding="5dp"
-            />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Gender: "
-        android:id="@+id/text3"
-        android:layout_below="@id/text2"
-        android:textStyle="bold"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="@dimen/up_margin"
-        />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/text3"
-        android:orientation="horizontal"
-        android:layout_toRightOf="@+id/text3"
-        >
-
-        <RadioButton
-            android:id="@+id/male_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/up_margin"
-            android:text="Male"
-            />
-
-        <RadioButton
-            android:id="@+id/female_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/up_margin"
-            android:text="Female"
-            />
-    </RadioGroup>
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp"
-        android:text="For Result click on Calculate BMI"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-92dp"
+        android:hint="@string/mass"
+        android:inputType="number|numberDecimal"
         android:textAlignment="center"
-        android:background="#DDD"
-        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/unit_mass"
+        android:layout_width="120dp"
+        android:layout_height="33dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/mass_value"
+        android:layout_marginStart="120dp"
+        android:entries="@array/mass_unit" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="202dp"
+        android:layout_height="33dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="102dp"
+        android:background="#000"
         android:padding="3dp"
-        />
+        android:text="Enter your Height: "
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/height_value"
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="142dp"
+
+        android:hint="@string/height"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15dp" />
+
+    <Spinner
+
+        android:id="@+id/unit_height"
+        android:layout_width="121dp"
+        android:layout_height="33dp"
+
+        android:layout_alignStart="@+id/unit_mass"
+        android:layout_alignTop="@+id/height_value"
+        android:entries="@array/height_unit"
+        android:padding="5dp" />
+
 
     <Button
         android:id="@+id/btn_sub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/text1"
+        android:layout_width="150dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="204dp"
-        android:text="Calulate BMI" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="212dp"
+        android:text="Calulate BMI"
+
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/reset"
+        android:layout_width="94dp"
+        android:layout_height="31dp"
 
-        android:layout_alignBaseline="@+id/btn_sub"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn_sub"
+        android:layout_marginTop="265dp"
         android:text="Reset"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/btn_sub"
-        />
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
