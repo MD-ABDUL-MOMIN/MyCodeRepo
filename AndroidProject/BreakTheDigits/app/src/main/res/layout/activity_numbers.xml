@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tom"
+    tools:context=".numbersActivity"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/head"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/info0"
+            android:layout_width="110dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+
+
+            android:contentDescription="@+string/todo"
+
+            android:src="@drawable/zero"
+
+            />
+
+        <ImageButton
+
+            android:id="@+id/info1"
+            android:layout_width="110dp"
+            android:layout_margin="5dp"
+
+
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@+string/todo"
+            android:src="@drawable/one"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/info2"
+            android:layout_width="110dp"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@+string/todo"
+            android:src="@drawable/two"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/info3"
+            android:layout_width="110dp"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@+string/todo"
+            android:src="@drawable/three"
+
+
+
+            />
+        <ImageButton
+            android:id="@+id/info4"
+            android:layout_width="110dp"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@+string/todo"
+            android:src="@drawable/four"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/info5"
+            android:layout_width="110dp"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@+string/todo"
+            android:src="@drawable/five"
+
+            />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageButton
+            android:id="@+id/info6"
+            android:layout_width="110dp"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/six"
+
+            />
+
+        <ImageButton
+            android:id="@+id/info7"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@+string/todo"
+            android:src="@drawable/seven"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/info8"
+            android:layout_width="110dp"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@+string/todo"
+            android:src="@drawable/eight"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+           <ImageButton
+               android:id="@+id/info9"
+               android:layout_width="350dp"
+               android:layout_margin="5dp"
+
+               android:layout_height="wrap_content"
+
+               android:contentDescription="@+string/todo"
+               android:src="@drawable/nine"
+
+
+               />
+
+
+       </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">মজায় অঙ্ক শিখি </string>
+    <string name="gameTitle">এসো মজায় মজায় অঙ্ক শিখি </string>
+    <string name="zero">  শূন্য </string>
+    <string name="one">  এক </string>
+    <string name="two">   দুই </string>
+    <string name="three"> তিন  </string>
+    <string name="four">  চার   </string>
+    <string name="five"> পাঁচ  </string>
+    <string name="six"> ছয়  </string>
+    <string name="seven">সাত   </string>
+    <string name="eight">  আট  </string>
+    <string name="nine">নয় </string>
+    <string name="head"> সংখ্যা অনুশীলনের জন্যে নির্বাচন করুন  </string>
+    <string name="hintVal">উপরের সংখ্যাটি নিচে লেখার চেষ্টা করুন</string>
+    <string name="todo">TODO</string>
+
+</resources>
+
