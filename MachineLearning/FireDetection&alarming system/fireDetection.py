@@ -11,15 +11,10 @@ ser1 = serial.Serial('COM3',9600)#change COM port number on which your arduino i
 
 cap = cv2.VideoCapture(0)
 while 1:
-    #ser1.write('0')
     ret, img = cap.read()
-    #cv2.imshow('imgorignal',img)
-#gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     fire = fire_cascade.detectMultiScale(img, 1.2, 5)
     for (x,y,w,h) in fire:
         cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),2)
-        #roi_gray = gray[y:y+h, x:x+w]
-        #roi_color = img[y:y+h, x:x+w]
         print ('Fire is detected..!')
         ser1.write(str.encode('p'))
         time.sleep(0.2)
