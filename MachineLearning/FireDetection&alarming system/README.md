@@ -1,6 +1,6 @@
 # Project Title: Fire Detection &  alarming system
 ## Requirements:
-  - Install Python, open cv, numpy in your computer.
+  - Install Python3, open cv, numpy in your computer.
   - Device & component:  Arduino, Buzzer,  LED (Light Emitting Diode),  LCD(Liquid Crystal Display), Resistor,  Wire e.t.c.
 ## procedure:
 - To arrange your cercuit check this two picture [pic1](https://github.com/MD-ABDUL-MOMIN/MyCodeRepo/blob/master/MachineLearning/FireDetection%26alarming%20system/hardwareBlockDiagram.png) and [picture 2](https://github.com/MD-ABDUL-MOMIN/MyCodeRepo/blob/master/MachineLearning/FireDetection%26alarming%20system/cercuitdiagramofFire%20security.PNG)
