@@ -1,4 +1,4 @@
-# Project Title: Fire Detection &  alarming system
+# Project Title: Automatic Fire Detection &  alarming system using Image processing and Arduino
 ## Requirements:
   - Install Python3, open cv, numpy in your computer.
   - Device & component:  Arduino, Buzzer,  LED (Light Emitting Diode),  LCD(Liquid Crystal Display), Resistor,  Wire e.t.c.
